@@ -1,11 +1,15 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import FixedBottomNavigation from '@/components/Navigation/BottomNavigation'
+import Navigation from '@/components/Navigation/Navigation'
+import { Container } from '@mui/material'
+import React from 'react'
 
-export default function Home() {
+const Home = () => {
   return (
-    <>
-    
-    d
-    </>
-  );
+    <Container>
+      <Navigation />
+      <FixedBottomNavigation />
+    </Container>
+  )
 }
+
+export default Home
